@@ -2,11 +2,11 @@ package dao;
 
 public interface IFactoryDAO {
 	
-	public IPatientInfoDAO getPatientInfoDao();
+	public IPatientInfoDAO getPatientInfoDAO();
 
-    public IStaffDAO getStaffDao();
+    public IStaffDAO getStaffDAO();
 
-    public IPatientDiagnosDAO getPatientDiagnosDao();
+    public IPatientDiagnosDAO getPatientDiagnosDAO();
 
     public IDiagnosEntityDAO getDiagnosEntityDAO();
 

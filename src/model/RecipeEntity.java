@@ -68,11 +68,11 @@ public class RecipeEntity implements Serializable {
         RecipeEntity taht = (RecipeEntity) o;
        
 
-        if (tablets != null ? !tablets.equals(that.tablets) : that.tablets != null) return false;
-        if (idRecipe != null ? !idRecipe.equals(that.idRecipe) : that.idRecipe != null)
+        if (tablets != null ? !tablets.equals(this.tablets) : this.tablets != null) return false;
+        if (idRecipe != null ? !idRecipe.equals(this.idRecipe) : this.idRecipe != null)
             return false;
-        if (operation != null ? !operation.equals(that.operation) : that.operation != null) return false;
-        if (procedure != null ? !procedure.equals(that.procedure) : that.procedure != null) return false;
+        if (operation != null ? !operation.equals(this.operation) : this.operation != null) return false;
+        if (procedure != null ? !procedure.equals(this.procedure) : this.procedure != null) return false;
 
         return true;
     }

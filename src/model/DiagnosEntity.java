@@ -18,12 +18,12 @@ public class DiagnosEntity implements Serializable {
     @Column(name = "ID_Diagnosis")
     public Integer getIdDiagnosis() {
         //logger.debug(idDiagnosis);
-        return idDiagnosis;
+        return idDiagnos;
     }
 
     public void setIdDiagnosis(Integer idDiagnosis) {
         //logger.debug(idDiagnosis);
-        this.idDiagnosis = idDiagnosis;
+        this.idDiagnos = idDiagnos;
     }
 
     @Basic
