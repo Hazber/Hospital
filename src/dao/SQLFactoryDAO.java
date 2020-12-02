@@ -1,6 +1,8 @@
 package dao;
+import org.apache.log4j.Logger;
 
 public class SQLFactoryDAO implements IFactoryDAO{
+	public static final Logger logger = Logger.getLogger(SQLFactoryDAO.class);
 	 @Override
 	    public IPatientInfoDAO getPatientInfoDAO() {
 	        logger.debug("patient dao");
