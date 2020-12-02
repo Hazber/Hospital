@@ -1,13 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ann_
-  Date: 24.02.15
-  Time: 11:36
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="my" uri="/WEB-INF/my_tags" %>
+<%@ taglib prefix="my" uri="/WEB-INF/tag" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <fmt:setLocale value="${sessionScope.language}"/>
 <fmt:setBundle basename='messages'/>
@@ -25,16 +19,16 @@
     ${wrapper.value.patientInfoEntity.surname}<br/>
     ${wrapper.value.diagnosisInfoEntity.name}<br/>
 
-    <p><fmt:message key='initialPrescription'/>n</p>
+    <p><fmt:message key='initialRecipe'/>n</p>
     ${wrapper.value.initialPrescription.drugs}<br/>
     ${wrapper.value.initialPrescription.procedure}<br/>
     ${wrapper.value.initialPrescription.operation}<br/>
 
-    <p><fmt:message key='currentPrescription'/></p>
+    <p><fmt:message key='currentRecipe'/></p>
     ${wrapper.value.currentPrescription.drugs}<br/>
     ${wrapper.value.currentPrescription.procedure}<br/>
     ${wrapper.value.currentPrescription.operation}<br/>
-    <my:commandbutton info="${wrapper.key}" command="giveDrugs">
+    <my:commandbutton info="${wrapper.key}" command="giveTablets">
         <fmt:message key='giveGrugs'/>
     </my:commandbutton>
     <my:commandbutton info="${wrapper.key}" command="makeProcedure">
